@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to Todo App{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Welcome to Todo App</h1>
+    <p>Manage your tasks efficiently with our simple and intuitive todo list application.</p>
+    <a href="{{ path('app_task_index') }}" class="btn btn-primary">View Tasks</a>
+    <a href="{{ path('app_task_new') }}" class="btn btn-success">Create New Task</a>
+</div>
+{% endblock %}
